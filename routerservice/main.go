@@ -60,7 +60,7 @@ func main() {
 	if err != nil {
 		panic("parsing apps.index err: " + err.Error())
 	}
-	if len(pfdapps.Keys) == 0 {
+	if len(pfdapps.Keys()) == 0 {
 		panic("no apps to work with (empty apps.index)")
 	}
 
